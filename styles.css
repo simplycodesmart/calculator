@@ -1,0 +1,145 @@
+/* styles.css */
+
+* {
+  font-family: 'Tektur';
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #082032;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 1em;
+}
+
+.calc-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.text-area-calc {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 18px;
+  text-align: right;
+  border-radius: 10px;
+  font-family: 'Tektur';
+  letter-spacing: 5px;
+}
+
+
+.button {
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #334756;
+  color: #f0f0f0;
+}
+
+.button:hover {
+  background-color: #444;
+}
+
+.symbol {
+  background-color: #082032;
+}
+
+.symbol:hover {
+  background-color: #0a344b;
+}
+
+.equals {
+  background-color: #334756;
+  height: 122px;
+}
+
+.equals:hover {
+  background-color: #3e5a79;
+}
+
+.clear {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.clear:hover {
+  background-color: #d4d4d4;
+}
+
+.history-section {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  text-align: right;
+}
+
+.tabs {
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0;
+}
+
+.tab-item {
+  background-color: #334756;
+  color: #f0f0f0;
+  border: none;
+  pointer-events: none;
+  width: 100%;
+  height: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.historyContent {
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  max-height: 260px;
+  margin-right: 10px;
+}
+
+.parentEle {
+  padding: 10px;
+}
+
+.parentEle:hover {
+  background-color: #ccc;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+
+.parentEle div span {
+  letter-spacing: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #555;
+}
